@@ -1,0 +1,101 @@
+.bg-green {
+    background-color: #017849;
+}
+.bg-gray {
+    background-color:  #E5E5E5;
+}
+.logo-text {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.color-text {
+    color: #00995D;
+
+}
+.title {
+    color: #00995d;
+    font-size: 18pt;
+
+}
+
+.color-title {
+    color: #00995d;
+
+}
+
+.title_modal {
+    width: 200px;
+    height: 200px;
+    align-content: center;
+    color: #00995D;
+
+}
+
+#modal {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+}
+
+.icons {
+    width: 35px;
+    height: 35px;
+    left: 15px;
+}
+
+.positionImages{
+    width: 35px;
+    height: 35px;
+    left: 15px;
+}
+
+.line {
+    top: -20px;
+    left: 16px;
+    z-index: 10;
+}
+
+.caixa {
+    margin-bottom: 20px;
+}
+
+.rectangle {
+    height: 190px;
+    width: 5px;
+    /* z-index: 20; */
+    top: 20px;
+}
+
+.rectangle_2 {
+    height: 140px;
+    width: 5px;
+    /* z-index: 20; */
+    top: 20px;
+}
+
+.icons2{
+    width: 35px;
+    height: 35px;
+    left: 15px;
+    top: 20px;
+}
+
+.pago {
+    margin-left: 209px;
+}
+
+.pix {
+    margin-left: 51px;
+}
+
+.forma{
+    margin-left: 80px;
+}
+
+.status {
+    margin-left: 80px;
+}
+
