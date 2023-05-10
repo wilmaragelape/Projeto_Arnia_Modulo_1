@@ -85,7 +85,7 @@ function prontuario(){
 }
 
 async function receberDados(){
-    let armazenamentoApi = await fetch('http://localhost:3000/pacientes')
+    let armazenamentoApi = await fetch('https://projetofinalarnia.onrender.com/pacientes')
     let dadosAtualizados = await armazenamentoApi.json()
     
     return(dadosAtualizados)
@@ -93,7 +93,7 @@ async function receberDados(){
 }
 
 async function enviarDados(objeto){
-    await fetch('http://localhost:3000/pacientes', {
+    await fetch('https://projetofinalarnia.onrender.com/pacientes', {
         method: "POST",
         headers: {
           'Accept': 'application/json, text/plain, /',
@@ -131,7 +131,7 @@ async function exibirPacientes() {
 
 async function excluirPacientes(id) {
     
-   await fetch  (`http://localhost:3000/pacientes/${id}`,{
+   await fetch  (`https://projetofinalarnia.onrender.com/pacientes/${id}`,{
     method: "DELETE"
    })
    exibirPacientes()
@@ -142,7 +142,7 @@ async function excluirPacientes(id) {
 
 async function editarPacientes(id) {
 
-        let pacientesArmazenados = await fetch (`http://localhost:3000/pacientes?id=${id}`)
+        let pacientesArmazenados = await fetch (`https://projetofinalarnia.onrender.com/pacientes?id=${id}`)
         let arrayPacientes = await pacientesArmazenados.json()
         let pacientes = arrayPacientes[0]
 
@@ -204,7 +204,7 @@ async function editarPacientes(id) {
         })
 
         async function editarPaciente(objeto){
-            await fetch(`http://localhost:3000/pacientes/${id}`, {
+            await fetch(`https://projetofinalarnia.onrender.com/pacientes/${id}`, {
             method: "PUT",
             headers: {
          'Accept': 'application/json, text/plain, /',
@@ -228,7 +228,7 @@ async function editarPacientes(id) {
 
    async function filter() {
     let filterName = document.querySelector('#inputFilter').value
-    let dadosFiltrados = await fetch (`http://localhost:3000/pacientes?nome=${filterName}`)
+    let dadosFiltrados = await fetch (`https://projetofinalarnia.onrender.com/pacientes?nome=${filterName}`)
     let dadosConvertidos = await dadosFiltrados.json()
     if (filterName === "") {
         exibirPacientes()
